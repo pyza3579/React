@@ -9,32 +9,31 @@ import Icon from '../Icon/Icon.js';
 
 
 class Column extends React.Component {
-    state = {
-        cards: this.props.cards || [], 
-    } 
-    static propTypes = {
-        columnTitle: PropTypes.string,
-        cards: PropTypes.array,
-}
-addCard(title){
+  state = {
+    cards: this.props.cards || [], 
+  } 
+  static propTypes = {
+    columnTitle: PropTypes.string,
+    cards: PropTypes.array,
+  }
+  addCard(title){
     this.setState(state => (
       {
         cards: [
-          ...state.cards,
+        ...state.cards,
           {
             key: state.cards.length ? state.cards[state.cards.length-1].key+1 : 0,
             title,
-
           }
         ]
       }
     ));
   }
-render() {
+  render() {
     return (
       <section className ={styles.component}> 
         <h3 className ={styles.title}>{this.props.title}
-        <span className ={styles.icon}/> <Icon name ={this.props.icon}/></h3>
+          <span className ={styles.icon}/> <Icon name ={this.props.icon}/></h3>
         <div className ={styles.cards}>
           {this.state.cards.map(({key, ...cardsProps}) => (
             <Card key={key} {...cardsProps} />

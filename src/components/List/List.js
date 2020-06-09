@@ -9,7 +9,9 @@ import Creator from '../Creator/Creator.js';
 
 class List extends React.Component {
   state = {
-    columns: this.props.columns || [], /* columns zapisane w <List />, right? */
+
+    columns: this.props.columns || [],
+    
   }
   static propTypes = {
     title: PropTypes.node.isRequired,
@@ -37,7 +39,7 @@ class List extends React.Component {
   }
   render() {
     return (
-      <section className ={styles.component}> 
+      <section className ={styles.component}>
         <h2 className ={styles.subtitle}><Hero titleText={this.props.title} img={this.props.image}/></h2> {/*this jest instancja List?*/}
         <div className={styles.description}>
           {ReactHtmlParser(this.props.description)}
