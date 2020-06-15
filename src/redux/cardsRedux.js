@@ -1,7 +1,8 @@
 import shortid from 'shortid';
 
 // selectors
-export const getCardsForColumn = ({cards}, columnId, searchString) => cards.filter(card => card.columnId == columnId && new RegExp(searchString, 'i').test(card.title));
+export const getCardsForColumn = ({cards, searchString}, columnId) => cards.filter(card => card.columnId == columnId && new RegExp(searchString, 'i').test(card.title));
+//Filtrowania nie bardzo rozumiem
 
 // action name creator
 const reducerName = 'cards';
