@@ -13,7 +13,7 @@ class App extends React.Component {
   }
 
   render() {
-    const {title, subtitle, lists} = this.props; //gdzie wczesniej zapisalismy propsy?one sa z dataStore, tak?
+    const {title, subtitle, lists} = this.props; 
     console.log(this.props);
     return (
       
