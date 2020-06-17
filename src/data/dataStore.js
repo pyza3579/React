@@ -1,6 +1,7 @@
 export const settings = {
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
+  headerIcon: 'cat',
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
@@ -12,6 +13,24 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+};
+
+export const headerTitle = {
+  headerHome: 'Home',
+  headerInfo: 'Info',
+  headerFAQ: 'FAQ',
+};
+
+export const faqContent = {
+  faqTitle: 'Frequently Asked Questions',
+  faqImage: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  faqDescription: 'A lot of questions are being asked this days. And we love answering all of them',
+};
+
+export const infoContent = {
+  infoTitle: 'Infopart',
+  infoImage: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  infoDescription: 'Information to keep you up to date',
 };
 
 export const pageContents = {
