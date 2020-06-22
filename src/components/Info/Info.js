@@ -6,9 +6,9 @@ import {infoContent} from '../../data/dataStore.js';
 
 const Info = props => (
   <Container>
-    <Hero infoTitle={props.title} img={props.image}>
-      <p className={props.description}></p>
+    <Hero titleText={props.title} img={props.image}>
     </Hero>
+    <p className={props.description}>{props.description}</p>
   </Container>
 );
 

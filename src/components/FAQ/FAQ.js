@@ -6,9 +6,9 @@ import {faqContent} from '../../data/dataStore.js';
 
 const FAQ = props => (
   <Container>
-    <Hero faqTitle={props.title} img={props.image}>
-      <p className={props.description}></p>
+    <Hero titleText={props.title} img={props.image}>
     </Hero>
+    <p className={props.description}>{faqContent.faqDescription}</p>
   </Container>
 );
 
