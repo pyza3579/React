@@ -8,7 +8,7 @@ const FAQ = props => (
   <Container>
     <Hero titleText={props.title} img={props.image}>
     </Hero>
-    <p className={props.description}>{faqContent.faqDescription}</p>
+    <p>{props.description}</p>
   </Container>
 );
 

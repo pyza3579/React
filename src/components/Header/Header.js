@@ -6,10 +6,11 @@ import Container from '../Container/Container.js';
 import {settings} from '../../data/dataStore.js';
 import PropTypes from 'prop-types';
 import {headerTitle} from '../../data/dataStore.js';
+import Search from '../Search/Search';
 
 
 
-class Header extends React.Component { //dlaczego render jest w class?
+class Header extends React.Component {
   static propTypes = {
     icon: PropTypes.node,
     home: PropTypes.node,
@@ -30,6 +31,7 @@ class Header extends React.Component { //dlaczego render jest w class?
     return (
       <header className={styles.component}>
         <Container>
+          <Search/>
           <div className={styles.wrapper}>
             <Link to='/' className={styles.logo}>
               <Icon name={icon} />
