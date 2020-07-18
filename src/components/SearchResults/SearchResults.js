@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Card from '../Card/Card.js';
 import Container from '../Container/Container.js';
 import styles from './SearchResults.scss';
-import Icon from '../Icon/Icon.js';
 
 
 
@@ -16,13 +15,10 @@ class SearchResults extends React.Component {
   }
 
   render() {
-    const {cards, title, icon} = this.props;
+    const {cards} = this.props;
     return (
       <Container>       
         <section className ={styles.component}> 
-          <h3 className ={title}>{title} 
-            <span className ={icon}/> <Icon name ={icon}/></h3> 
-          <div className ={styles.cards}></div>
           <div>
             {cards.map(cardsData => (
               <Card key={cardsData.id} {...cardsData} />
